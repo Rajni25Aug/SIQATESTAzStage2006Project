@@ -16,6 +16,14 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+- serviceName: project.siqatestazstage2006.integrations:childFS
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
 - serviceName: project.siqatestazstage2006.integrations:deepclonetest
   packages:
   - name: SIQATESTAzStage2006Project
@@ -32,3 +40,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+- serviceName: project.siqatestazstage2006.integrations:parentFS
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
