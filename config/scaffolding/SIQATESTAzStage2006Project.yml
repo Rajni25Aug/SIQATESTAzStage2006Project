@@ -8,6 +8,14 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 services:
+- serviceName: project.siqatestazstage2006.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2040
 - serviceName: project.siqatestazstage2006.integrations:deepclonetest
   packages:
   - name: SIQATESTAzStage2006Project
