@@ -7,15 +7,34 @@ packages:
   gitUrl: https://github.com/Rajni25Aug
   gitUsername: Rajni25Aug
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
+- serviceName: project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqatestazstage2006.integrations:AlertsCRTandERT
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.alert:emit
   packages:
   - name: WmPublic
@@ -24,10 +43,18 @@ services:
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.siqatestazstage2006.integrations:childFS
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.date:getCurrentDate
   packages:
   - name: WmPublic
@@ -36,6 +63,10 @@ services:
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: pub.string:stringToBytes
   packages:
   - name: WmPublic
@@ -52,3 +83,54 @@ services:
   packages:
   - name: SIQATESTAzStage2006Project
     version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
+  : Testdb
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
+  : siqatest
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQATESTAzStage2006Project.project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
+  : MySQL
