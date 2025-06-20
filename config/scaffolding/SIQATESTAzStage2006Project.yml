@@ -8,6 +8,10 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 services:
+- serviceName: project.siqatestazstage2006.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
 - serviceName: project.siqatestazstage2006.integrations:AlertsCRTandERT
   packages:
   - name: SIQATESTAzStage2006Project
@@ -16,6 +20,10 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2040
+- serviceName: project.siqatestazstage2006.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQATESTAzStage2006Project
+    version: "1.0"
 - serviceName: project.siqatestazstage2006.integrations:childFS
   packages:
   - name: SIQATESTAzStage2006Project
